@@ -164,8 +164,8 @@ Scanner input= new Scanner(System.in);
 //        System.out.println("Ortalama: "+ ortalama + "===>" + sonuc);
 //
 //
-////
-////
+//
+
 //
 //        System.out.print("Lütfen şehir giriniz:");
 //        String sehir=input.nextLine();
@@ -186,37 +186,70 @@ Scanner input= new Scanner(System.in);
 //        if (takimSembol=='f'||takimSembol=='F'){
 //            System.out.println("FENERBAHÇE");
 //        }
+//
+//        System.out.println("11-B eğtim restoranı");
+//        System.out.println("--------");
+//        System.out.println("1- Ana yemek");
+//        System.out.println("2- Çorba");
+//        System.out.println("3- Pizzalar");
+//        System.out.println("4- İçeçekler");
+//        System.out.println("5 - tatlıalr");
+//        System.out.println("----------");
+//
+//
+//        input.nextLine();
+//        System.out.println("Lütfen bir menü numarası giriniz.");
+//        String menuSecim=input.nextLine();
+//
+//        if (menuSecim.equals("1")){
+//            System.out.println("Ana yemekler : Köri soslu tavuk, makarna, tavuk pilav, döner");
+//        } else if (menuSecim.equals("2")) {
+//            System.out.println("Çorbalar: mercimek , kelle paça ,tarhana,işmebve");
+//
+//        }  else if (menuSecim.equals("3")) {
+//            System.out.println("Pizzalar: kaşarlı pizza , sucuklı pizza ,kavurmalı pizza");
+//
+//        } else if (menuSecim.equals("4")) {
+//            System.out.println("içecekler: kola , fabta ,çay,su");
+//
+//        } else if (menuSecim.equals("5")) {
+//            System.out.println("tatlılar: şam , baklava  ,soğuk baklava,halka");
+//
+//        }
 
-        System.out.println("11-B eğtim restoranı");
-        System.out.println("--------");
-        System.out.println("1- Ana yemek");
-        System.out.println("2- Çorba");
-        System.out.println("3- Pizzalar");
-        System.out.println("4- İçeçekler");
-        System.out.println("5 - tatlıalr");
-        System.out.println("----------");
 
 
-        input.nextLine();
-        System.out.println("Lütfen bir menü numarası giriniz.");
-        String menuSecim=input.nextLine();
+        String ad= "TALHA";
+        String soyisim="KALAYCIOĞLU";
+        int yas= 20;
+        boolean KimlikVar=true;
+        boolean saglikRaporu=false;
 
-        if (menuSecim.equals("1")){
-            System.out.println("Ana yemekler : Köri soslu tavuk, makarna, tavuk pilav, döner");
-        } else if (menuSecim.equals("2")) {
-            System.out.println("Çorbalar: mercimek , kelle paça ,tarhana,işmebve");
+        System.out.println("--------- Ehliyet Başvruru Bilgileri -----------");
+        System.out.println("Adı Soyadı: "+ad+" "+soyisim);
+        System.out.println("Yaş: "+yas);
+        System.out.println("Kimlik Durmu: "+ KimlikVar);
+        System.out.println("Sağlık Raporu:"+ saglikRaporu);
+        System.out.println("------------------------------------------------");
 
-        }  else if (menuSecim.equals("3")) {
-            System.out.println("Pizzalar: kaşarlı pizza , sucuklı pizza ,kavurmalı pizza");
+        if (yas>=18 && KimlikVar && saglikRaporu){
+            System.out.println("Tebrikler, Ehliyet alabilirisiniz");
 
-        } else if (menuSecim.equals("4")) {
-            System.out.println("içecekler: kola , fabta ,çay,su");
-
-        } else if (menuSecim.equals("5")) {
-            System.out.println("tatlılar: şam , baklava  ,soğuk baklava,halka");
+        } else if (yas>=18 && KimlikVar && !saglikRaporu) {
+            System.out.println("Sağlık raporunuz eksik, İşlem tamamlanmadı");
 
         }
+        else if(yas<18){
+            System.out.println("Yaşınız 18den küçük başvuru yapamazsınız.");
+        }
+        else {
+            System.out.println("Bilgileriniz eksik ehliyiet alamazsınız.");
+        }
 
+        boolean basvuruUygunMu=(yas>=18 && KimlikVar && saglikRaporu);
+        System.out.println();
+        System.out.println("Başvuru Sonucu: " +basvuruUygunMu);
+        System.out.println(" Program bşarıyla çalıştı. (DOSYA UZANTISI :   .java");
 
     }
 
