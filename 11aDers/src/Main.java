@@ -1,3 +1,4 @@
+import javax.sql.rowset.spi.SyncResolver;
 import java.util.Scanner;
 
 public class Main {
@@ -211,7 +212,7 @@ public class Main {
             System.out.println("Besiktaş");
         }*/
 
-        System.out.println("11-a Eğtim Restoranı");
+     /*   System.out.println("11-a Eğtim Restoranı");
         System.out.println("-------------------");
 
     System.out.println("1 - Ana yemek");
@@ -241,9 +242,210 @@ public class Main {
         }
         else if (menuSecim.equals("5")){
             System.out.println("soğuk baklaca ,halka,kemalpaşa,baklava,künefe");
+        }*/
+
+/*
+        System.out.println("Başkenti giriniz:");
+        String baskent=input.nextLine();
+        System.out.println("Ülke giriniz");
+        String ulke = input.nextLine();
+
+        if (baskent.equals("Ankara") && ulke.equals("Türkiye")){
+            System.out.println("Veriler Doğru girildi");
+        }else {
+            System.out.println("Veriler Yanlış Girildi.");
+
+        }
+        */
+       /* System.out.println("Bir sayı saçiniz");
+        int sayi=input.nextInt();
+
+        if (sayi==4){
+            System.out.println("Tahminibiz doğru");
+        }else{
+            System.out.println("Tahmin yanlıştır.");
+        }*/
+
+      /*  System.out.println("1.sınav notunu giriniz");
+        double sinav1=input.nextDouble();
+        System.out.println("2.sınav notunu giriniz");
+        double sinav2=input.nextDouble();
+
+        System.out.println("3.sınav notunu giriniz");
+        double sinav3=input.nextDouble();
+
+        double ortalama= (sinav1+sinav2+sinav3)/3;
+
+        String sonucMesaji="";
+
+        if (ortalama>0 && ortalama<50){
+            sonucMesaji="Sonuc Rezalet";
+        }
+        if (ortalama>50 && ortalama<70){
+            sonucMesaji="Sonuc Ortalama";
+        }
+        if (ortalama>70 && ortalama<=84){
+            sonucMesaji="Sonuç İyi";
+        }
+        if (ortalama>84){
+            sonucMesaji="Sonuc Mükemmel";
+        }
+
+System.out.println("Ortalam = "+ ortalama + "==>  "+ sonucMesaji);
+*/
+
+/*
+
+
+        System.out.println("Lütfen şehir giriniz:");
+        String sehir=input.nextLine();
+
+        if (sehir.equals("Trabzon") || sehir.equals("Ordu") || sehir.equals("Giresun")||sehir.equals("Samsun")){
+            System.out.println("Girilen şehir karadeniz bolgesinde yer alır");
+        }else{
+            System.out.println("Girilen şehir karadenizde değilidr.");
+        }
+*/
+
+        //%25 indirm örneği
+
+      /*  System.out.println("1.ürün fiyatını girini");
+        double urun1=input.nextDouble();
+        System.out.println("2. ürün giyatını giriniz");
+        double urun2=input.nextDouble();
+
+        double toplam=urun1+urun2;
+        double odenecekTutar=toplam;
+
+        if (toplam>=200){
+            double indirim =urun2*25/100;
+            odenecekTutar -=indirim;
+        }
+        System.out.println("Ödenecek Tutar =  "+ odenecekTutar+ " TL");
+*/
+
+/*
+        System.out.println("Yılın kaçıncı ayı: ");
+        int kacinciAy= input.nextInt();
+
+
+        switch (kacinciAy){
+            case 1: System.out.println("Ocak"); break;
+            case 2: System.out.println("Şubat");break;
+            case 3: System.out.println("Mart");break;
+            case 4: System.out.println("Nisan");break;
+            case 5: System.out.println("Mayıs");break;
+            case 6: System.out.println("Haziran");break;
+            case 7: System.out.println("Temmuz");break;
+            case 8: System.out.println("Ağustos");break;
+            case 9: System.out.println("Eylül");break;
+            case 10: System.out.println("Ekim");break;
+            case 11: System.out.println("Kasım");break;
+            case 12: System.out.println("Aralık");break;
+            default: System.out.println("Hatalı Giriş");break;
+        }*/
+
+
+      /*  System.out.println("1. sayıyı giriniz:");
+        int s1=input.nextInt();
+        System.out.println("2.SAyıyı giriniz");
+        int s2=input.nextInt();
+
+        System.out.println("İşlem sembolünü seçiniz: (+ - * / %");
+        char sembol= input.next().charAt(0);
+        int sonuc2=0;
+
+        switch (sembol){
+            case '+' : sonuc2=s1+s2;break;
+            case '-' : sonuc2=s1-s2;break;
+            case '*' : sonuc2=s1*s2;break;
+            case '/' : sonuc2=s1/s2;break;
+            case '%' : sonuc2=s1%s2;break;
+            default: System.out.println("Hatalı Operatör !");break;
+        }
+        System.out.println("Sonuc = "+ sonuc2);
+*/
+
+      /*  System.out.println("Akşam yemiği mi yoksa Kahvaltı mı?");
+        String cevap=input.nextLine().toUpperCase(); // Yazılan cevabu büyük harflere çevirir  akşam yemeği ==> AKŞAM YEMEĞİ
+
+        System.out.println("Kaç Kişi ?");
+        int kisiSayisi=input.nextInt();
+
+        String fiyat= "";
+
+
+
+        switch (cevap) {
+            case "AKŞAM YEMEĞİ":
+                if(kisiSayisi==1){
+                fiyat="100";
+            } else if (kisiSayisi==2){
+                fiyat="200";
+            }break;
+
+            case "KAHVALTI":
+                if (kisiSayisi==1){
+                    fiyat="180";
+                } else if (kisiSayisi==2) {
+                    fiyat="360";
+                }break;
+
+        }
+
+        System.out.println("Ödenecek Tutar : "+ fiyat+ " TL");
+*/
+
+
+        System.out.println("---------- ÜYELİK DOĞRULMAA SİSTEMİ ------------");
+
+        System.out.println("Yaşınızı giriniz:");
+        int yas=input.nextInt();
+        System.out.println("Kimliğiniz var mı ? ( true/false)");
+        boolean kimlikVar=input.nextBoolean();
+
+        System.out.println("Üyelik Aktif mi? (true/false)");
+        boolean uyelikAktif=input.nextBoolean();
+
+        System.out.println("Ceza aldınız mı? (true/false)");
+        boolean cezaVar=input.nextBoolean();
+
+        System.out.println("\n ----- Sistem kontrolü başladı!!----");
+        //AND (&&) ÖRNEĞİ -TÜM ŞARTLAR DOĞRU OLMALI
+
+        if (yas>=18 && kimlikVar && uyelikAktif){
+            System.out.println("Üyelik şartları sağlanıyor...");
+
+        }else {
+            System.out.println(("Üyelik için gerekli şartlar sağlanmıyor"));
+        }
+
+        // OR (||) ÖRNEĞİ- TEK BİR ŞARTIN DPĞRU OLMASININ YETERLİ OLDUGU OPERATÖR
+
+        if ((yas>=18 || uyelikAktif)){
+            System.out.println("Sisteme sınırlı erişim sağlanabilir");
+
+        }else {
+            System.out.println("Sisteme hiçbir erişim verilemez.");
         }
 
 
+        //NOT(!) örneği- Değeri tam tersine çevirdiğiniz operatör
+
+        if (!cezaVar){
+            System.out.println("Kullanıcının ceza kaydı yok");
+        }else {
+            System.out.println("Kullanıcın ceza kaydı var");
+        }
+
+
+        // KOMBİNE EDİLMŞ ÖRNEK ÇÖZÜMÜ ( ÖNCELİK SIRALAMASI)
+
+        if ((yas>=18 && kimlikVar)||(!cezaVar&&uyelikAktif)){
+            System.out.println("Tüm değerlendirmeler sonucunda kullanıcı onaylandı.");
+        }else {
+            System.out.println("Kullanıcı reddedildi.");
+        }
 
 
     }

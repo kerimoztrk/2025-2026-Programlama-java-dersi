@@ -10,16 +10,15 @@ public class Main {
         //System.out.print("gencler");
 
 
-
-       // System.out.println("-------- Yemek Çeşitleri ---------");
-       // System.out.println();
-       // System.out.println("1- Ana Yemek");
-       // System.out.println("2- Çorbalar");
-       // System.out.println("3- Tatlılar");
-       // System.out.println("4- Salatalar");
-       // System.out.println("5- İçecekler");
-       // System.out.println();
-       // System.out.println("-------- Yemek Çeşitleri ---------");
+        // System.out.println("-------- Yemek Çeşitleri ---------");
+        // System.out.println();
+        // System.out.println("1- Ana Yemek");
+        // System.out.println("2- Çorbalar");
+        // System.out.println("3- Tatlılar");
+        // System.out.println("4- Salatalar");
+        // System.out.println("5- İçecekler");
+        // System.out.println();
+        // System.out.println("-------- Yemek Çeşitleri ---------");
 
 
         //Snake Case => degisken_turu_ornegi
@@ -66,7 +65,7 @@ public class Main {
      /*   double elmaFiyatı=12.5;
         double portakalFiyatı=15.99;
         double cilekFiyatı=29.6443;
-        double muzFiyatı=99.86;
+        double muzFiyatı=99.800;
         double domatesFiyatı= 29.32;
 
         System.out.println("---------- Fiyat Listesi ----------");
@@ -104,9 +103,9 @@ public class Main {
         System.out.println();
         System.out.println("----------- Sipariş Özeti -----------");*/
 
-Scanner input= new Scanner(System.in);
-      /*  System.out.println(("Lütfen şifreyi giriniz :"));*/
-/*Koşullu ifadeler (İf/else)*/
+        Scanner input = new Scanner(System.in);
+        /*  System.out.println(("Lütfen şifreyi giriniz :"));*/
+        /*Koşullu ifadeler (İf/else)*/
 
       /*  String sifre = input.nextLine();
 
@@ -219,7 +218,7 @@ Scanner input= new Scanner(System.in);
 
 
 
-        String ad= "TALHA";
+        /*String ad= "TALHA";
         String soyisim="KALAYCIOĞLU";
         int yas= 20;
         boolean KimlikVar=true;
@@ -249,8 +248,105 @@ Scanner input= new Scanner(System.in);
         boolean basvuruUygunMu=(yas>=18 && KimlikVar && saglikRaporu);
         System.out.println();
         System.out.println("Başvuru Sonucu: " +basvuruUygunMu);
-        System.out.println(" Program bşarıyla çalıştı. (DOSYA UZANTISI :   .java");
+        System.out.println(" Program bşarıyla çalıştı. (DOSYA UZANTISI :   .java");*/
 
+
+     /*   System.out.println("Yılın kacıncı ayı:");
+
+        int kacinciAy=input.nextInt();
+
+        switch (kacinciAy){
+            case 1: System.out.println("Ocak");break;
+            case 2: System.out.println("Şubat");break;
+            case 3: System.out.println("Mart");break;
+            case 4: System.out.println("Nisan");break;
+            case 5: System.out.println("Mayıs");break;
+            case 6: System.out.println("Haziran");break;
+            case 7: System.out.println("Temmuz");break;
+            case 8: System.out.println("Ağustos");break;
+            case 9: System.out.println("Eylül");break;
+            case 10: System.out.println("Ekim");break;
+            case 11: System.out.println("Kasım");break;
+            case 12: System.out.println("Aralık");break;
+            default:System.out.println("Hatalı bir Giriş");break;
+        }
+
+
+        System.out.println("1. sayıyı giriniz:");
+        int sayi1=input.nextInt();
+
+        System.out.println("2. Sayıtı giriniz:");
+        int sayi2=input.nextInt();
+
+        System.out.println("İşlem sembolünü giriniz ( + - / * %) ");
+        char sembol= input.next().charAt(0);
+
+
+        int sonucHesapMakinesi=0;
+
+
+        switch (sembol) {
+            case '+' : sonucHesapMakinesi=sayi1+sayi2; break;
+            case '-' : sonucHesapMakinesi=sayi1-sayi2; break;
+            case '*': sonucHesapMakinesi=sayi1*sayi2; break;
+            case '/': sonucHesapMakinesi=sayi1/sayi2;break;
+            case '%': sonucHesapMakinesi=sayi1%sayi2; break;
+        }
+        System.out.println("Sonuc =  "+sonucHesapMakinesi);
+*/
+
+
+        System.out.println("ÜYELİK KONTROL SİSTEMİ");
+
+        System.out.println("Yaşınızı giriniz:");
+        int yas = input.nextInt();
+
+        System.out.println("Kimliğiniz varmı? (true/false");
+        boolean kimlikVar = input.nextBoolean();
+
+        System.out.println("Üyeliğiniz Var mı (true/false )");
+        boolean uyelikVar = input.nextBoolean();
+
+        System.out.println("Cezanız varmı=(true/false");
+        boolean cezaVAr = input.nextBoolean();
+
+        System.out.println("Sistem kontrolü başlıyor....");
+        //And (&&) örneği tüm şartların doğru olmalı
+
+        if (yas >= 18 && kimlikVar && uyelikVar) {
+            System.out.println("Üyelik şartları sağlanıyor");
+        } else {
+            System.out.println("Üyelik için gerekli şartlar sağlanmıyor.");
+        }
+
+
+        //OR (||) -TEK BİR ŞARTIN DOĞRU OLMASI YETERLİ
+
+        if (yas >= 18 || uyelikVar) {
+            System.out.println("Sınırlı erişim verilebilri");
+        } else {
+            System.out.println("Hiçbir erişim verilemez");
+        }
+
+        //Not(!) - değeri tersine çebirme
+        if (!cezaVAr) {
+            System.out.println("Kullanıcının ceza kaydı yok");
+
+        } else {
+            System.out.println("Kullanının ceza kaydı var");
+        }
+
+        if ((yas >= 18 && kimlikVar) || (!cezaVAr && uyelikVar)) {
+            System.out.println("Tüm değerlendirmeler sonucunda kullanıcı onaylandı");
+
+        } else {
+            System.out.println("Kullanıcı red edildi.");
+
+
+        }
     }
+
+
+
 
 }
