@@ -1,3 +1,4 @@
+import javax.annotation.processing.SupportedSourceVersion;
 import javax.sql.rowset.spi.SyncResolver;
 import java.util.Scanner;
 
@@ -9,7 +10,6 @@ public class Main {
         //System.out.print("'dir");
         //System.out.println("merhaba");
         //System.out.print("gencler");
-
 
 
         // System.out.println("-------- Yemek Çeşitleri ---------");
@@ -396,7 +396,7 @@ System.out.println("Ortalam = "+ ortalama + "==>  "+ sonucMesaji);
         System.out.println("Ödenecek Tutar : "+ fiyat+ " TL");
 */
 
-
+/*
         System.out.println("---------- ÜYELİK DOĞRULMAA SİSTEMİ ------------");
 
         System.out.println("Yaşınızı giriniz:");
@@ -445,6 +445,137 @@ System.out.println("Ortalam = "+ ortalama + "==>  "+ sonucMesaji);
             System.out.println("Tüm değerlendirmeler sonucunda kullanıcı onaylandı.");
         }else {
             System.out.println("Kullanıcı reddedildi.");
+        }*/
+
+
+        // for (x;y;z)
+        // x= başlangıç
+        //y = koşulu - bitişi
+        // z= artış / azalış
+
+        /*for (int i =1 ; i<=5;i++){
+            System.out.println("11 B sınıfı");
+        }
+
+        for (int i=5; i>=1 ; i--){
+            System.out.println("deneme 11 b");
+        }
+
+        for (int i =3; i<=51; i+=3){
+            System.out.println(i);
+        }*/
+
+/*
+        // 1den 100 e kadar sayıların arasından 5 e tam bölğnen sayıları veren kod
+
+        for (int i=1; i<=100 ; i++){
+            if (i%5==0){
+                System.out.println(i);
+            }
+        }
+
+        // 1 den 20 ye kadar olan ardışık sayıların toplamını veren kod
+
+        int toplam=0;
+        for (int i=1;i<=20;i++){
+            toplam = toplam + i ;
+        }
+        System.out.println(toplam);
+
+        */
+
+     /*   int i =1 ;
+
+        while (i<=10){
+            System.out.println("11-a Sınıfı ");
+            i++;
+        }
+
+        //1den 10 a kadar sayıların arasından 3 e tam bölünen sayıları yadıran  porgram
+
+        int sayac = 10;
+
+        while(sayac>=1){
+            if(sayac%3==0){
+                System.out.println(sayac);
+
+            }
+            sayac--;
+        }
+
+
+        //ardısık sayı toplamı
+
+        int sayac2=1;
+
+        int toplam2=0;
+
+        while(sayac2<=10){
+            toplam2=toplam2+sayac2;
+            sayac2++;
+        }
+        System.out.println(toplam2);
+*/
+
+        //kullanıcı 0 girene kadar toplama işlemi yapan program
+/*
+        int sayi;
+
+        int toplam=0;
+
+        System.out.println("Sayı girin ve bitirmek için 0 yazın");
+
+        sayi= input.nextInt();
+
+        while (sayi !=0){
+            toplam=toplam+sayi;
+            sayi= input.nextInt();
+        }
+        System.out.println("Toplama işlemi sonlandı : "+toplam);
+    }*/
+
+
+        // Faktöriyel Hesabı while döngüsü
+
+        /*int n =5;
+
+        int sonuc=1;
+
+
+        while(n>0){
+            sonuc=sonuc*n;
+            n--;
+        }
+        System.out.println("Faktmriyel hsabı: "+sonuc);
+
+        */
+
+        // 3 basamaklı sayının rakamaları toplamı
+
+        System.out.println("3 Basamaklı sayıyı giriniz.:");
+
+        int sayi = input.nextInt();
+
+        int birler = sayi % 10;
+
+        int onlar = (sayi % 100) / 10;
+
+        int yuzler = sayi / 100;
+
+        int toplam = birler + onlar + yuzler;
+
+        System.out.println(toplam);
+
+        // her saaatte bir artan bakteri üremesi hesabı
+
+        int bakteri = 1;
+
+        for (int i=1 ; i <=24 ; i++){
+            bakteri = bakteri *2;
+            int dakika= i*60;
+            System.out.println(i+ ".  Saat sonunda :" + bakteri);
+            System.out.println(dakika+ ".  Dakika sonunda :" + bakteri);
+
         }
 
 

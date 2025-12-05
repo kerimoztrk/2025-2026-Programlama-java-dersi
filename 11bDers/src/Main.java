@@ -295,7 +295,7 @@ public class Main {
         System.out.println("Sonuc =  "+sonucHesapMakinesi);
 */
 
-
+/*
         System.out.println("ÜYELİK KONTROL SİSTEMİ");
 
         System.out.println("Yaşınızı giriniz:");
@@ -343,10 +343,168 @@ public class Main {
             System.out.println("Kullanıcı red edildi.");
 
 
+        }*/
+
+
+        //for(x;y;z)
+
+        //x = başlangıç
+        //y= bitiş / kosul
+        //z= artış veya azalış
+
+/*//1 den 5 e kadar yazdırma
+        for(int i = 1; i<6; i++){
+            System.out.println(i);
         }
+// 5 ten geri 1 e kadar yazdırma
+        for (int i = 5 ; i>=1 ; i--){
+            System.out.println(i);
+        }
+
+        //1 den 20 e kadar yazdırma
+        for(int i = 1; i<21; i++){
+            System.out.println(i);
+        }
+// 5 ten geri 1 e kadar yazdırma
+        for (int i = 20 ; i>=1 ; i--){
+            System.out.println(i);
+
+
+
+    }*/
+
+        /*for (int i =2; i<=20 ; i+=2){
+            System.out.println("11-A sınfıı");
+        }
+
+        for (int i =3; i<=51 ; i+=3){
+            System.out.println(i);
+        }*/
+
+       /* //1 den 100 e kadar sayıların arasından 5 e tam bölünen sayıları veren kod
+        for (int i=1;i<=100;i+=1){
+            if (i%5==0){
+                System.out.println(i);
+            }
+        }
+
+        //1 den 20 ye kadar olan ardısık sayıların toplamını veren kod
+
+        int toplam=0;
+
+        for (int i=1;i<=20;i++){
+            toplam=toplam+i;
+
+        }
+        System.out.println(toplam);
+
+// 1den 10 a kadar olan çift sayıların toplamını veren kdo
+        int toplam2=0;
+        for (int i = 1 ;i<=10 ; i++){
+            if (i%2==0){
+                toplam2 += i;
+
+            }
+        }
+        System.out.println(toplam2);*/
+
+        // her saaatte bir artan bakteri üremesi hesabı
+
+        /*int bakteri = 1;
+
+        for (int i=1 ; i <=24 ; i++){
+            bakteri = bakteri *2;
+            int dakika= i*60;
+            System.out.println(i+ ".  Saat sonunda :" + bakteri);
+            System.out.println(dakika+ ".  Dakika sonunda :" + bakteri);
+
+        }
+*/
+
+      /*  int i=1;
+
+        while (i <=10) {
+            System.out.println("11 B tasarım sınıfı ");
+            i++;
+        }
+        */
+
+
+        // 1den 10 akadar olan sayıların arasından 3 e tam bölünen sayıları yazdıran program
+
+       /* int i =1;
+
+        while (i <=10){
+            if (i%3==0){
+                System.out.println(i);
+            }
+
+            i++;
+        }*/
+
+       /* int i=1;
+        int toplam=0;
+
+        while(i<=10){
+            toplam = toplam +i;
+            i++;
+        }
+        System.out.println(toplam);
+
+*/
+
+
+    /*    // kullanıcı 0 girenee kadar toplama işlem iyapan program
+
+        int sayi;
+
+        int toplam= 0;
+
+        System.out.println("Sayı girin (bitirmek içi o yazın):");
+
+        sayi=input.nextInt();
+
+        while(sayi != 0){
+            toplam= toplam+sayi;
+            sayi=input.nextInt();
+        }
+
+        System.out.println("Toplama işlemi sonlandı : " + toplam);
+*/
+
+
+        // Faktöriyel Hesanbı while ddongüsü
+/*
+        int n =5;
+
+        int sonuc=1;
+
+        while (n>0){
+            sonuc = sonuc* n;
+            n--;
+        }
+
+        System.out.println("Faktöriyel hesabı : " +sonuc);*/
+
+
+
+
+        // üç basamaklı sayının rakamları toplamı
+
+        System.out.println(("Sayıyı giriniz:"));
+
+        int sayi=input.nextInt();
+
+        int birler = sayi%10;
+
+        int onlar=  (sayi%100)/10;
+
+        int yuzler = sayi/100;
+
+        int toplam= birler+onlar+yuzler;
+
+        System.out.println("Basamak toplamı  =   "+ toplam);
+
     }
-
-
-
 
 }
