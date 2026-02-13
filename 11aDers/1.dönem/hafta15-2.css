@@ -1,0 +1,18 @@
+body{
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f2f4f8;
+}
+
+.sayfa{
+    width: 90px;
+    margin: 30px auto;
+}
+
+.baslik{
+    text-align: center;
+    padding: 30px;
+    color: white;
+    background: linear-gradient(to right,#3a7bd5,#3a6073);
+    border-radius: 10px;
+}

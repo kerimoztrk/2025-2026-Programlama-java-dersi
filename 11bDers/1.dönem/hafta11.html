@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hafta 11</title>
+</head>
+
+<body>
+    <!-- 
+    <form action="#" method="get">
+
+        <label>Adınız:</label>
+        <input type="text"name="ad"><br><br>
+
+        <label>Soyadınız:</label>
+        <input type="text" name="soyad"> <br><br>
+
+        <input type="submit" value="Gönder">
+
+    </form> -->
+
+    <h2>İletişim Formu</h2>
+
+
+    <form action="#" method="get" enctype="multipart/form-data">
+
+        <label> Ad Soyad:</label>
+        <input type="text" name="adSoyad" placeholder="Tam adınızı giriniz" required><br><br>
+        <label> E-posta</label>
+        <input type="email" name="email" placeholder="Epostanızı girin" required><br><br>
+
+        <label>Cinsiyet: </label>
+        <label><input type="radio" name="cinsiyet" value="Erkek"> Erkek</label>
+        <label><input type="radio" name="cinsiyet" value="Kadın"> Kadın</label><br><br>
+
+
+        <label>Hobilerimiz:</label><br><br>
+        <label><input type="checkbox" name="hobi" value="Müzik"> Müzik</label><br><br>
+        <label><input type="checkbox" name="hobi" value="Spor">Spor</label><br><br>
+        <label><input type="checkbox" name="hobi" value="Yazılım">Yazılım</label><br><br>
+
+        <label>Şehir:</label><br>
+
+        <select name="sehir">
+
+            <option value="İstanvul">İstanbul</option>
+            <option value="Ankara">Ankara</option>
+            <option value="Adana">Adana</option>
+
+        </select><br><br><br>
+
+        <label> Mesajınız:</label><br>
+        <textarea name="mesaj" placeholder="Lütfen bahsetmek istediğiniz konuyu yazın" rows="4" cols="45"></textarea>
+        <br><br>
+        <input type="submit" value="Gönder">
+        <input type="reset" value="Temizle">
+    </form>
+    <br><br><br><br><br> <hr> 
+
+    <br>
+    <h2>Etkinlik kayıt Formu</h2>
+    <form action="#" method="post">
+
+        <label>Ad Soyad:</label><br>
+        <input type="text" name="adSoyad" placeholder="Adınızı soyadınızı girin" required><br><br>
+
+        <label>E posta:</label><br>
+        <input type="email" name="email" placeholder="Lütfen Eposta Adresinizi yazınç" required><br><br>
+
+        <label>Katılmak istediğiniz Tarih:</label><br>
+        <input type="date" name="tarih" required><br><br>
+
+
+        <label> Yaş grubu:</label><br>
+        <select name="secim">
+            <option value="15-20">15-20 yaş arası</option>
+            <option value="21-30">21-30 yaş arası</option>
+            <option value="60üstü">60 yaş üstü</option>
+        </select><br><br>
+
+        <label>Cinsiyet:</label><br>
+        <label><input type="radio" name="cinsiyet" value="Erkek">Erkek</label><br>
+        <label><input type="radio" name="cinsiyet" value="Kadın">Kadın</label>
+
+<br><br>
+<label>İlgi Alanları:</label><br>
+<label><input type="checkbox" name="ilgi" value="Teknoloji">Teknoloji</label><br>
+<label><input type="checkbox" name="ilgi" value="Sanat">Sanat</label><br>
+<label><input type="checkbox" name="ilgi" value="Seyahat">Seyahat</label><br><br>
+
+
+<label > Eklemek istediğinz Not:</label><br>
+<textarea name="mesaj" cols="40" rows="5"></textarea><br><br>
+
+<label >Özgeçmiş yükleyin:</label><br><br>
+<input type="file" name="dosya" accept=".pdf,.doc,.docx"><br>
+
+<input type="submit" value="Gönder">
+<input type="reset" value="Temizle">
+
+    </form>
+   
+<br><br><br>
+<hr>
+<br>
+
+
+
+<h2>Ürün Destek Formu</h2>
+<form action="#" method="post" enctype="multipart/form-data">
+
+<label>Ad soyad:</label><br>
+<input type="text" name="adSoyadd" placeholder="Adınızı soyadınızı girin" required><br><br>
+
+<label>Telefon :</label><br>
+<input type="tel" name="telefon" placeholder=" 05XX XXX XXXX" required><br><br>
+
+<label>Satın Alma Tarihi:</label><br>
+<input type="date" name="tarih" required><br><br>
+
+<label> Ürünü Kategorisi:</label><br>
+
+<select name="secim2" >
+    <option value="Telefon">Telefon</option>
+    <option value="Bilgisayar">Bilgisayar</option>
+    <option value="Ev_Elektronigi">Ev Elektroniği</option>
+    <option value="diger">Diğer</option>
+</select><br>
+<br>
+
+<label> Sorunun Türü:</label><br>
+<label><input type="radio" name="sorun" value="donaım">Donanım</label><br>
+<label><input type="radio" name="sorun" value="yazilim">Yazılım</label><br><br>
+<label><input type="radio" name="sorun" value="diger">Diğer</label><br><br>
+
+
+<label>Eklenen Evrak / Görsel</label><br><br>
+<input type="file" name="dosya" accept="image/*, .pdf"><br><br>
+
+<label> Sorununuzu Açıklayın:</label><br>       
+<textarea name="metin" cols="40" rows="4" placeholder="Lütfen sorununuzu belirtin" maxlength="100"></textarea><br><br>
+
+<input type="submit" value="Gönder">
+<input type="reset" value="Temizle">
+
+
+
+</form>
+
+
+
+</body>
+
+</html>

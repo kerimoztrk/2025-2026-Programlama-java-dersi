@@ -1,0 +1,43 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #242225;
+}
+
+.sayfa {
+    width: 300px;
+    margin: 30px auto;
+}
+
+.baslik {
+    text-align: center;
+    padding: 30px;
+    color: white;
+    background: linear-gradient(to right, #3a7bd5, #d61dd3);
+    border-radius: 15px;
+
+}
+
+.icerik {
+    margin-top: 30px;
+}
+
+.kart {
+    background-color: white;
+    border: 2px solid #ff4242;
+    border-radius: 12px;
+    padding: 20px;
+
+    margin-bottom: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 1);
+}
+
+.kart h2 {
+    color: #3a7bd5;
+    margin-bottom: 10px;
+}
+
+.kart p {
+    font-size: 15px;
+    line-height: 1.6;
+    color: #333;
+}

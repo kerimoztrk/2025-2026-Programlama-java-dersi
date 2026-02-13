@@ -1,0 +1,81 @@
+/* Evrensel Seçiçi */
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+/* ETİKET SEÇİÇİ */
+
+body {
+    font-family: Arial;
+    background-color: aliceblue;
+    padding: 40px;
+}
+
+/* SINIF SEÇİÇİ */
+
+.kart {
+    width: 300px;
+    background-color: white;
+
+    /*kutu modeli*/
+    padding: 20px;
+    border: 2px solid #ccc;
+    margin: 30px auto;
+
+    border-radius: 15px;
+    box-shadow: 5px 5px 15px rgba(0, 0, 0, 0.3);
+    text-align: center;
+
+}
+
+
+#isim {
+    font-size: 22px;
+    color: #333;
+    margin-top: 10px;
+}
+
+
+/* ID SEÇİÇİ */
+
+h3,
+p {
+    margin-bottom: 20px;
+}
+
+/* iç içe seçiçi */
+
+.kart p {
+    color: #666;
+    font-size: 15px;
+}
+
+.buton {
+   display: inline-block;
+    padding: 10px 20px;
+    background-color: darkblue;
+    color: white;
+    text-decoration: none;
+
+    border-radius: 8px;
+    font-weight: bold;
+    margin-top: 10px;
+
+
+}
+
+.buton:hover {
+    background: #001a66;
+}
+
+
+.profil {
+    width: 100% auto;
+    height: 200px;
+    object-fit: cover;
+    border-radius: 10px;
+}

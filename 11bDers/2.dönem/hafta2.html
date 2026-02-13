@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+
+<body id="body">
+<!--     
+    Üzerine gelince yazı değişen örnek -->
+
+    <!-- <h2 onmouseover="degistir()" id="baslik">Üzerime gel</h2> -->
+<!-- 
+Yazdıkça karakter sayısını veren örnek -->
+<!-- <h2>Karakter Sayacı</h2>
+<input type="text" id="metin" onkeyup="karakterSay()">
+<p id="sonuc"></p> -->
+<!-- 
+seçim değişince mesaj değişen örnek -->
+
+<!-- <h2>Şehir Seçici</h2>
+
+<select onchange="secildi()" id="sehir">
+
+<option> İstanbul</option>
+<option> Ankara</option>
+<option> İzmir</option>
+
+</select>
+<p id="sonuc2"></p> -->
+
+<!-- çift tıklayınca mesaj değişen örnek -->
+<!-- <h2 id="metin2" ondblclick="renkDegis()">çift Tıkla</h2> -->
+
+<!-- gece modu gündüz modu örneği -->
+
+
+<!-- <h2> Gece - Gündüz Modu</h2>
+
+<button onclick="geceModu()">Gece Modu</button>
+<button onclick="gunduzModu()">Gündüz Modu</button> -->
+
+
+<!-- <h2>PArametresiz fonsiyon örnekleri</h2>
+
+
+<input type="button" value="Boyutlandır" onclick="boyutlandir()">
+<br><br>
+
+<img src="fotograflar/resim.jpg" id="resim" width="900px"> -->
+
+<!-- <h2>Parametreli fonksiyon örnekleri
+</h2>
+
+<button onclick="topla(123125,10123,322)">Topla </button>
+<p id="toplam"></p> -->
+
+
+<!-- Kullanıcıdan alınan değerle hesap yapma örneği -->
+
+<!-- <h2>Parametre ile alan hesabı</h2>
+
+<input type="number" id="kisa" placeholder="kısa kenar gir">
+<input type="number" id="uzun" placeholder="uzun kenar gir">
+<button onclick="alanHesapla()"> Hesapla </button>
+<br><br>
+<p id="sonuc5">Henüz sonuç yok.</p> -->
+
+
+<!-- <h2>Return anahtar kelimesi kullanımı</h2>
+
+
+<button onclick="goster()"> Hesapla</button>
+<p id="sonuc6"></p> -->
+
+
+<h2>Görseli Kenar Yuvarlama örneği</h2>
+
+<button onclick="yuvarla('resim',0)">0</button>
+<button onclick="yuvarla('resim',10)">10 px</button>
+<button onclick="yuvarla('resim',25)">25 px</button>
+<button onclick="yuvarla('resim',100)">Tam yuvarlak</button>
+<br><br>
+
+<div style="width: 200px; height: 200px;">
+    <img src="fotograflar/resim.jpg" id="resim" width="200" height="200">
+</div>
+
+
+
+<script>
+
+// function degistir(){
+//     document.getElementById("baslik").innerHTML="Mouse üzerime geldi";
+// }
+
+
+// function karakterSay(){
+//     let uzunluk=document.getElementById("metin").value.length;
+
+//     document.getElementById("sonuc").innerHTML="Karakter sayısı:"+uzunluk;
+// }
+
+// function secildi(){
+    
+//     let secim=document.getElementById("sehir").value;
+
+//     document.getElementById("sonuc2").innerHTML="Seçilen şehir:"+ secim;
+// }
+
+// function renkDegis(){
+//     document.getElementById("metin2").style.color="red";
+// }
+
+
+//function geceModu(){
+//    document.getElementById("body").style.backgroundColor="black";
+//    document.getElementById("body").style.color="white";
+//}
+
+//function gunduzModu(){
+//    document.getElementById("body").style.backgroundColor="white";
+//    document.getElementById("body").style.color="black";
+//}
+
+
+// function boyutlandir(){
+//     document.getElementById("resim").style.width="150px";
+//     document.getElementById("resim").style.height="150px";
+// }
+
+
+// function topla(a,b,c){
+
+//     let toplam=a+b+c;
+//     document.getElementById("toplam").innerHTML="Toplam:"+ toplam;
+// }
+
+
+// function alanHesapla(){
+//     let k=document.getElementById("kisa").value;
+//     let u=document.getElementById("uzun").value;
+
+//     hesapla(k,u);
+
+// }
+
+// function hesapla(a,b){
+//     let alan=a*b;
+//     document.getElementById("sonuc5").innerHTML="Alan:"+alan;
+// }
+
+
+
+//function topla(a,b){
+//    return a+b;
+//}
+
+//function goster(){
+//    let sonuc= topla(6,7);
+
+//    document.getElementById("sonuc6").innerHTML="Sonuç:"+sonuc;
+//}
+
+
+function yuvarla(idDegeri,miktar){
+    document.getElementById(idDegeri).style.borderRadius=miktar+"px";
+}
+                      
+</script>
+
+
+
+
+</body>
+</html>

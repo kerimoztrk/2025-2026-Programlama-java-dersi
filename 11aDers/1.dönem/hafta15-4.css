@@ -1,0 +1,47 @@
+body{
+    background:linear-gradient(to bottom,#141e30,#243b55);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+
+}
+
+
+.gym{
+    width: 400px;
+    background-color: #1c1c1c;
+    color: white;
+    margin: 60px auto;
+    padding:20px;
+    border-radius: 15px;
+}
+
+.gym h1{
+    text-align: center;
+    color: #f1c40f;
+    letter-spacing: 2px;
+}
+
+.slogan{
+    text-align: center;
+    color: #bac3c7;
+    font-size: 15px;
+}
+
+.gym ul{
+    margin-top: 20px;
+}
+
+.gym li {
+    margin-bottom: 8px;
+    color: #ecf0f1;
+}
+
+
+.uye-ol{
+    margin-top: 40px;
+    text-align: center;
+    background-color: #f39c12;
+    padding: 10px;
+    color: black;
+    font-weight: 700;
+    border-radius: 6px;
+}

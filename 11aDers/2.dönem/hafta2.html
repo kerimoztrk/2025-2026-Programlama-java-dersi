@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+
+
+<!-- üzerine gelince yazısı değişsin -->
+    <!-- <h2 onmouseover="degistir()" id="baslik"> ÜZERİME GEL</h2> -->
+
+    <!-- Yazdıkça harf sayısını gösteren örnek -->
+
+    <!-- <h2>KArakter Sayaç örneği</h2>
+
+    <input type="text" id="metin" onkeyup="say()">
+<br>
+<p id="sonuc"></p> -->
+
+
+<!-- Seçilen eleman değişince mesaj gösteren örnek -->
+
+<!-- <h2>Şehir Seçimi</h2>
+
+<select  onchange="secildi()" id="sehir">
+
+<option> İstanbul</option> 
+<option> Ankara</option> 
+<option> İzmir</option> 
+</select>
+
+<p id="secilenSehir"></p> -->
+
+
+<!-- Çift tıklayınca renk değiştiren örnek -->
+
+<!-- <h2 ondblclick="renkDegis()" id="metin2">Çift Tıkla</h2> -->
+
+
+<!-- 
+ Gece Gündüz örneği -->
+
+ <body id="body">
+    
+ </body>
+ <h2>Gece - Gündüz modu</h2>
+
+ <button onclick="geceModu()">Gece Moduna Geç</button>
+ <button onclick="gunduzModu()">Gündüz Moduna Geç</button>
+
+
+
+    <script>
+
+// function degistir(){
+//     document.getElementById("baslik").innerHTML=
+//     "Mouse üzerine geldi !!!";
+// }
+
+
+// function say(){
+
+//     let uzunluk= document.getElementById("metin").value.length;
+
+//     document.getElementById("sonuc").innerHTML="KARAKTER SAYII DEĞERİ= "+ uzunluk; 
+// }
+
+
+// function secildi(){ 
+//    let secim= document.getElementById("sehir").value; 
+
+//    document.getElementById("secilenSehir").innerHTML="Seçilen Şehir = "+secim;
+// }
+
+
+// function renkDegis(){
+//     document.getElementById("metin2").style.color="red";
+// }
+
+
+function geceModu(){
+    document.getElementById("body").style.backgroundColor="black";
+    document.getElementById("body").style.color="white";
+}
+
+function gunduzModu(){
+    document.getElementById("body").style.backgroundColor="white";
+    document.getElementById("body").style.color="black";
+}
+
+
+
+    </script>
+    
+</body>
+</html>

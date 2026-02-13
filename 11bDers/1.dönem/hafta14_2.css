@@ -1,0 +1,38 @@
+body {
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #f3f5ff;
+    padding: 40px;
+}
+
+.baslik {
+    text-align: center;
+    margin-bottom: 30px;
+    font-size: 32px;
+}
+
+.container {
+    display: flex;
+    gap: 30px;
+    justify-content: center;
+}
+
+.card {
+    width: 280px;
+    padding: 20px;
+    border: 2px solid #d4d4ff;
+    background-color: #fff;
+    border-radius: 20px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 1);
+    text-align: left;
+
+
+}
+
+.card:hover {
+    box-shadow: 0 0 14px rgba(0, 0, 0, 1);
+    transform: translateY(-5px)
+}
+
+.card ul {
+    margin-left: 20px;
+}

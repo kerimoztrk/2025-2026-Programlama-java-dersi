@@ -2,6 +2,50 @@ import javax.annotation.processing.SupportedSourceVersion;
 import javax.sql.rowset.spi.SyncResolver;
 import java.util.Scanner;
 
+
+
+class Kullanici{
+
+    //alan tanımlama (fields)
+
+    private String kullaniciAdi;    //normal özellik
+    private String Sifre;           //sadece yazılabilir
+    private String tcKimlik;        //sadece okunabilir öözellik
+
+
+    //Constructor ( ilk değeri atamak için)
+
+    public Kullanici(String tc){
+        this.tcKimlik=tc;
+    }
+
+
+    // Kullancı adı hem okunulabilir hem de yazılabilir old. için get ve set metodu yazılır.
+
+    public void setKullaniciAdi(String ad){
+        this.kullaniciAdi=ad;
+    }
+
+    public String getKullaniciAdi(){
+        return kullaniciAdi;
+    }
+
+    //sadece yazıalbilir bir özellik
+    public void setSifre(String sifre){
+        this.Sifre=sifre;
+    }
+
+    public String getTcKimlik(){
+        return tcKimlik;
+    }
+
+}
+
+
+
+
+
+
 public class Main {
     public static void main(String[] args) {
         //System.out.println("KErim");
@@ -552,31 +596,36 @@ System.out.println("Ortalam = "+ ortalama + "==>  "+ sonucMesaji);
 
         // 3 basamaklı sayının rakamaları toplamı
 
-        System.out.println("3 Basamaklı sayıyı giriniz.:");
+//        System.out.println("3 Basamaklı sayıyı giriniz.:");
+//
+//        int sayi = input.nextInt();
+//
+//        int birler = sayi % 10;
+//
+//        int onlar = (sayi % 100) / 10;
+//
+//        int yuzler = sayi / 100;
+//
+//        int toplam = birler + onlar + yuzler;
+//
+//        System.out.println(toplam);
+//
+//        // her saaatte bir artan bakteri üremesi hesabı
+//
+//        int bakteri = 1;
+//
+//        for (int i=1 ; i <=24 ; i++){
+//            bakteri = bakteri *2;
+//            int dakika= i*60;
+//            System.out.println(i+ ".  Saat sonunda :" + bakteri);
+//            System.out.println(dakika+ ".  Dakika sonunda :" + bakteri);
 
-        int sayi = input.nextInt();
+//        }
 
-        int birler = sayi % 10;
 
-        int onlar = (sayi % 100) / 10;
 
-        int yuzler = sayi / 100;
 
-        int toplam = birler + onlar + yuzler;
 
-        System.out.println(toplam);
-
-        // her saaatte bir artan bakteri üremesi hesabı
-
-        int bakteri = 1;
-
-        for (int i=1 ; i <=24 ; i++){
-            bakteri = bakteri *2;
-            int dakika= i*60;
-            System.out.println(i+ ".  Saat sonunda :" + bakteri);
-            System.out.println(dakika+ ".  Dakika sonunda :" + bakteri);
-
-        }
 
 
     }

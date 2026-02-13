@@ -1,0 +1,47 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #eef2ff;
+    padding:30px;
+}
+
+
+.takvim{
+    width: 600px;
+    margin:0 auto;
+}
+
+.etkinlik{
+    border: 2px solid #4b5cff;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    background-color: white;
+    box-shadow: 0 0 29px #c7cdff;
+}
+
+.etkinlik h2{
+    margin-bottom: 5px;
+}
+
+.tarih{
+    font-weight: bold;
+    color:#333;
+    margin-bottom: 10px;
+}
+
+.onemli{
+    border: 2px solid #ff4949;
+    padding: 15px;
+    margin-bottom: 20px;
+    border-radius: 10px;
+background-color: #ffe4e4;
+border-color: #ff4949;
+}
+
+.etkinlik:hover{
+    transform: scale(1.03);
+}
+
+.onemli:hover{
+    transform: scale(1.5);
+}

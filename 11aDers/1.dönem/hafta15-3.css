@@ -1,0 +1,34 @@
+body{
+    font-family: Arial, Helvetica, sans-serif;
+    background: linear-gradient(to right,#ffecd2,#fcb69f);
+}
+
+
+
+.menu{
+    width: 500px;
+    background-color: white;
+    margin: 50px auto;
+    padding:20px;
+    border-radius: 12px;
+}
+
+.menu h1{
+    text-align: center;
+    color: #d35400;
+}
+
+.aciklama{
+    text-align: center;
+    color: #555;
+    font-style: italic;
+}
+
+.urun h2{
+    color: #c0392b;
+}
+
+.urun span{
+    font-weight: bold;
+    color: #27ae60;
+}
