@@ -47,6 +47,69 @@ class Kullanici{
 
 
 public class Main {
+
+    // METOT TANIMI
+
+    public static int Topla(int a,int b){
+        return a+b;
+    }
+
+    //varsayılan değerli parametreler
+
+    public static void selamVer(){
+        selamVer(" üyw");
+    }
+
+    public static void selamVer(String isim){
+        System.out.println(("merhaba "+isim));
+    }
+
+
+
+
+    public static void bilgiYaz(String ad,int yas){
+        System.out.println(ad+" - "+yas);
+    }
+
+
+
+    public static  int Topla2(int ... sayilar){
+        int toplam=0;
+
+        for (int s: sayilar){
+            toplam+=s;
+        }
+
+        return toplam;
+    }
+
+
+
+    public static  void kontrol(int sayi){
+        if (sayi<0){
+            return;
+        }
+        System.out.println("Pozitif SAyı");
+    }
+
+
+
+    public static int MatematikselToplama(int a, int b){
+        return a+b;
+    }
+
+    public static int MatematikselToplama(int a, int b,int c){
+        return a+b+c;
+    }
+
+    public static double MatematikselToplama(double a, double b){
+        return a+b;
+    }
+
+
+
+
+
     public static void main(String[] args) {
         //System.out.println("KErim");
         //System.out.print("öztürk");
@@ -623,10 +686,23 @@ System.out.println("Ortalam = "+ ortalama + "==>  "+ sonucMesaji);
 //        }
 
 
+//        int sonuc= Topla(5,3);
+//        System.out.println("Sonucç: "+ sonuc);
 
+//        selamVer();
+//        selamVer("Ahmet");
 
+//        bilgiYaz("Aybar",18);
 
+//System.out.println(Topla2(1,2,3,4));
+//System.out.println(Topla2(1,2,3,4,5,6,7,8));
 
+//        kontrol(-5);
+//        kontrol(10);
+
+//        System.out.println(MatematikselToplama(2,3));
+//        System.out.println(MatematikselToplama(2,3,4));
+//        System.out.println(MatematikselToplama(2.5,3.2));
 
     }
 }
