@@ -2,8 +2,78 @@ import javax.annotation.processing.SupportedSourceVersion;
 import javax.sql.rowset.spi.SyncResolver;
 import java.util.Scanner;
 
+class Matematik{
+    static int topla(int sayi1,int sayi2){
+        return sayi1+sayi2;
+    }
+}
+
+class HesapMakinesi{
+    static int kareAl(int sayi){
+        return sayi*sayi;
+    }
+}
+
+interface Ucan {
+    void  ucmak();
+}
+
+class Kus implements Ucan{
+
+    public void ucmak(){
+       System.out.println("Uçuyosun");
+    }
+}
 
 
+class Arac {
+    void calistir(){
+        System.out.println("Araç çalışıyor");
+    }
+}
+
+class Araba2 extends Arac{
+    @Override
+    void calistir() {
+        System.out.println("Araba çalşıt");
+    }
+}
+
+class  Motosiklet extends Arac{
+    @Override
+    void calistir() {
+        System.out.println("Motosiklet Çalıştı");
+    }
+}
+
+
+
+
+abstract class Hayvan2{
+    abstract void sescikar();
+}
+
+class Kedi2 extends Hayvan2{
+    @Override
+    void sescikar() {
+        System.out.println("Miyav");
+    }
+}
+
+class Kopek2 extends Hayvan2{
+    @Override
+    void sescikar() {
+        System.out.println("HAv Hav");
+    }
+}
+
+
+
+
+
+class Kisi{
+    int yas;
+}
 class Kullanici{
 
     //alan tanımlama (fields)
@@ -42,10 +112,84 @@ class Kullanici{
 }
 
 
+class Ogrenci{
+    String ad;
+    int yas;
+
+
+    //constructor oluşturma örneği
+    public Ogrenci(String ad,int yas){
+        this.ad=ad;
+        this.yas=yas;
+    }
+
+    void bilgileriYaz(){
+        System.out.println(ad+"-----"+yas);
+    }
 
 
 
 
+}
+
+
+class Araba{
+    String marka;
+    int yil;
+
+    public Araba(String marka){
+        this.marka=marka;
+    }
+}
+
+
+//kalıtım örneği
+
+class Insan {
+    void konus(){
+        System.out.println("insan konuştu");
+    }
+}
+
+class Ogrenci2 extends Insan{
+
+}
+
+class  Sekil{
+    void ciz(){
+        System.out.println("Şekil çiziliyor");
+    }
+}
+
+class Daire extends Sekil{
+
+}
+class  Kare extends  Sekil{
+
+}
+
+
+class Hayvan{
+    void sesCikar(){
+        System.out.println("Hayvan sesi");
+    }
+}
+
+
+class Kedi extends Hayvan{
+    @Override
+    void sesCikar() {
+
+     System.out.println("miyav");
+    }
+}
+
+class Kopek extends Hayvan{
+    @Override
+    void sesCikar() {
+        System.out.println("HAv Hav");
+    }
+}
 public class Main {
 
     // METOT TANIMI
@@ -107,7 +251,12 @@ public class Main {
     }
 
 
-
+public static void degistir(int x){
+        x=50;
+}
+    public static void degistir(Kisi k){
+        k.yas=30;
+    }
 
 
     public static void main(String[] args) {
@@ -704,5 +853,64 @@ System.out.println("Ortalam = "+ ortalama + "==>  "+ sonucMesaji);
 //        System.out.println(MatematikselToplama(2,3,4));
 //        System.out.println(MatematikselToplama(2.5,3.2));
 
+
+//
+//        Ogrenci ogr1=new Ogrenci("Kayra",16);
+//        ogr1.bilgileriYaz();
+
+        //Değer Tipler (Primitive Types)
+//        int a=10;
+//        int b = a;
+//        b=20;
+//        System.out.println(a);
+
+
+        //Referans Tipler
+
+//        int[] dizi1={1,2,3};
+//        int[] dizi2=dizi1;
+//
+//        dizi2[0]=99;
+//
+//        System.out.println(dizi1[0]);
+
+//        int sayi=10;
+//        degistir(sayi);
+//        System.out.println(sayi);
+//
+//Kisi kisi1=new Kisi();
+//kisi1.yas=20;
+//
+//degistir(kisi1);
+//
+//System.out.println(kisi1.yas);
+
+//        Ogrenci2 murat= new Ogrenci2();
+//        murat.konus();
+
+//        Daire d =new Daire();
+//        Kare k =new Kare();
+//
+//        d.ciz();
+//        k.ciz();
+//
+//
+//        Kedi k= new Kedi();
+//        k.sesCikar();
+//
+//        Hayvan h=new Kopek();
+//        h.sesCikar();
+
+//        Arac a1=new Araba2();
+//        Arac a2=new Motosiklet();
+//
+//        a1.calistir();
+//        a2.calistir();
+
+        int sonuc= Matematik.topla(5,2);
+        System.out.println(sonuc);
+
+        int sonuc2=HesapMakinesi.kareAl(12);
+        System.out.println(sonuc2);
     }
 }

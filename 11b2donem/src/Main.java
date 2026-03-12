@@ -1,3 +1,30 @@
+
+interface  Ucan{
+    void uc();
+}
+
+class Kus implements Ucan{
+    public void uc() {
+
+    }
+}
+
+abstract class Hayvan2{
+    abstract void sesCikar();
+}
+
+class Kedi2 extends Hayvan2{
+    void sesCikar(){
+        System.out.println("Miyav");
+    }
+}
+
+class Kopek2 extends Hayvan2{
+    void sesCikar(){
+        System.out.println("Hav Hav");
+    }
+}
+
 class Kullanici{
 
     //ALANLAR (fields)
@@ -120,6 +147,61 @@ public static double Topla3(double a,double b){
 
 
 
+
+// KALITIM KONU BAŞLANGICI
+
+class Insan{
+    void konus(){
+        System.out.println("İnsan konuşuyor");
+    }
+}
+
+class  Ogrenci2 extends Insan{
+
+}
+
+
+class Sekil{
+    void ciz(){
+        System.out.println("Şekil Çiziliyor");
+    }
+}
+
+class Daire extends Sekil{
+
+}
+
+class Kare extends Sekil{
+
+}
+
+// METOT GÖLGELEMEE OVERRİDE
+class Hayvan {
+    void sesCikar(){
+        System.out.println("Hayvan sesi");
+    }
+}
+
+class Kedi extends Hayvan{
+
+    @Override
+    void sesCikar() {
+        System.out.println("Miyav");
+    }
+}
+
+class Kopek extends  Hayvan{
+    @Override
+    void sesCikar() {
+        System.out.println("Hav");
+    }
+}
+
+
+
+
+
+
 void main() {
 
 //nesne tanımlama
@@ -164,19 +246,37 @@ void main() {
 //    Ogrenci ogrenci1= new Ogrenci("Eyüp",17);
 //    ogrenci1.bilgileriYaz();
 
-int a =10;
-int b=a;
+//int a =10;
+//int b=a;
+//
+//b=20;
+//
+//System.out.println(a); //10
+//
+//
+//    int[]dizi1={1,2,3};
+//    int[]dizi2=dizi1;
+//    dizi2[0]=99;
+//
+//    System.out.println(dizi1[0]); //99
 
-b=20;
 
-System.out.println(a); //10
+//Ogrenci2 berra =new Ogrenci2();
+//berra.konus();
+//
+//Daire d=new Daire();
+//Kare k=new Kare();
+//
+//d.ciz();
+//k.ciz();
 
+//
+//    Kedi k = new Kedi();
+//    k.sesCikar();
+//
+//    Kopek d=new Kopek();
+//    d.sesCikar();
 
-    int[]dizi1={1,2,3};
-    int[]dizi2=dizi1;
-    dizi2[0]=99;
-
-    System.out.println(dizi1[0]); //99
 
 
 
