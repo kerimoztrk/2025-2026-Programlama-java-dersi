@@ -1,3 +1,6 @@
+import java.util.Arrays;
+
+
 
 interface  Ucan{
     void uc();
@@ -278,9 +281,175 @@ void main() {
 //    d.sesCikar();
 
 
+// String[] isimler= {"Ahmet","mehmet","aybar","caglar"};
+//
+// //foreach döngüsü mantıgıyla eleman yazdırma
+//
+//    for( String isim : isimler){
+//        System.out.println(isim);
+//    }
+//
+//
+//    Arrays.sort(isimler);
+//    System.out.println(Arrays.toString(isimler));
+//
+
+    //çok boyutlu dizi tasarımı
+//
+//    int [][] cokBoyutluDizi= {
+//            {12,22,33,43},
+//            {42,522,62,41}
+//    };
+//
+//
+//    for ( int i=0; i<cokBoyutluDizi.length;i++){
+//        for(int j=0; j<cokBoyutluDizi[i].length;j++){
+//            System.out.println(cokBoyutluDizi[i][j]+ " ");
+//        }
+//        System.out.println();
+//    }
 
 
 
+//    int [][] cokBoyutluDiziToplama = {
+//            {123,123,12,12},
+//            {424,121,6546,7655}
+//    };
+//
+//
+//    int toplam = 0 ;
+//
+//    for( int i =0; i<cokBoyutluDiziToplama.length;i++){
+//        for (int j =0 ; j<cokBoyutluDiziToplama[i].length;j++){
+//            toplam += cokBoyutluDiziToplama[i][j];
+//        }
+//    }
+//
+//    System.out.println("Dizinin içindeki tolam elemean değerleri = "+toplam);
 
+
+//
+//    int [] sayilar= {12,5,7,88};
+//    System.out.println("Orjinal dizi");
+//    for (int s:sayilar){
+//        System.out.println(s+ " ");
+//    }
+//
+//    //sıralama
+//
+//    Arrays.sort(sayilar);
+//    System.out.println("\n Sıralamanmış dizi:");
+//    System.out.println(Arrays.toString(sayilar));
+//
+//    //2 boyurlu dizi
+//
+//    int  [][] dizi={
+//            {1,2},
+//            {3,4}
+//    };
+//
+//    int toplam2 = 0 ;
+//
+//    for( int i =0; i<dizi.length;i++){
+//        for (int j =0 ; j<dizi[i].length;j++){
+//         toplam2 += dizi[i][j];
+//      }
+//  }
+//
+//    System.out.println("Dizinin içindeki tolam elemean değerleri = "+toplam2);
+//
+
+//     int sayi=5;
+//
+//     //Boxing (kutulama)
+//
+//    Integer nesne= sayi;
+//
+//    //ubboxing
+//
+//    int tekrar= nesne;
+//
+//
+//    System.out.println("ilkel: "+ sayi);
+//    System.out.println("Nesne: "+nesne);
+//    System.out.println("Tekrar ilkel: "+tekrar);
+
+//Arraylist tanımlama örneği
+//    ArrayList<Integer> sayilar= new ArrayList<>();
+//
+//    sayilar.add(10);
+//    sayilar.add(20);
+//    sayilar.add(30);
+//
+//    System.out.println("Eleman sayısı : "+sayilar.size());
+//    System.out.println("İlk eleman : "+ sayilar.get(0));
+
+//    ArrayList<String> isimler= new ArrayList<>();
+//
+//    isimler.add("Ali");
+//    isimler.add("Veli");
+//    isimler.add("Ayşe");
+//
+//    for (String isim: isimler){
+//        System.out.println(isim);
+//    }
+
+
+
+//    ArrayList<String> meyveler= new ArrayList<>();
+//
+//    meyveler.add("Elma");
+//    meyveler.add("Armut");
+//    meyveler.add("Muz");
+//    //eleman düzenleme
+//    meyveler.set(1,"Portakal");
+//    //eleman silme
+//    meyveler.remove(0);
+//
+//    System.out.println(meyveler);
+
+
+    //list oluşturma orneği
+//    List <Integer> sayilar2=new ArrayList<>();
+//
+//    sayilar2.add(5);
+//    sayilar2.add(14);
+//    sayilar2.add(20);
+//
+//    for (int s: sayilar2){
+//        System.out.println(s);
+//    }
+//
+
+//öğrenci notları
+
+    List <Integer> notlar=new ArrayList<>();
+
+    notlar.add(70);
+    notlar.add(89);
+    notlar.add(77);
+    notlar.add(90);
+
+    int toplam= 0;
+
+    System.out.println("Notlar: ");
+
+    for (int n: notlar){
+        System.out.println(n);
+        toplam+=n;
+    }
+
+    double ortalama= (double)toplam / notlar.size();
+
+    System.out.println("ORtalama: "+ ortalama);
+
+
+    if (ortalama>=70){
+        System.out.println("Geöti");
+    }else{
+        System.out.println("Kaldı");
+    }
 
 }
+
+

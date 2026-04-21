@@ -1,7 +1,9 @@
 import javax.annotation.processing.SupportedSourceVersion;
 import javax.sql.rowset.spi.SyncResolver;
+import java.util.ArrayList;
+import java.util.List;
 import java.util.Scanner;
-
+import java.util.Arrays;
 class Matematik{
     static int topla(int sayi1,int sayi2){
         return sayi1+sayi2;
@@ -907,10 +909,144 @@ System.out.println("Ortalam = "+ ortalama + "==>  "+ sonucMesaji);
 //        a1.calistir();
 //        a2.calistir();
 
-        int sonuc= Matematik.topla(5,2);
-        System.out.println(sonuc);
+//        int sonuc= Matematik.topla(5,2);
+//        System.out.println(sonuc);
+//
+//        int sonuc2=HesapMakinesi.kareAl(12);
+//        System.out.println(sonuc2);
 
-        int sonuc2=HesapMakinesi.kareAl(12);
-        System.out.println(sonuc2);
+//
+//        String[] isimler= {"Kayra","Ali","Ayşe","Mehmet"};
+//
+//        //foreach dongüsü mantıgı ile eleman yazdırma
+//        for (String isim : isimler){
+//            System.out.println(isim);
+//        }
+//
+//        Arrays.sort(isimler);
+//        System.out.println(Arrays.toString(isimler));
+//        int [] sayilar = {40,10,30,20};
+//
+//        Arrays.sort(sayilar);
+//
+//        System.out.println(Arrays.toString(sayilar));
+
+//        int [][] matris = {
+//                {1,2,3,4},
+//                {4,5,6,4}
+//        };
+//
+//        for( int i=0; i<matris.length; i++){
+//            for (int j=0;j<matris[i].length;j++){
+//                System.out.println(matris[i][j]+ " ");
+//            }
+//            System.out.println();
+//        }
+
+//        int [][] matris2 = {
+//                {12,22,33,43},
+//                {42,522,62,41}
+//        };
+//
+//        int toplam=0;
+//        for( int i=0; i<matris2.length; i++){
+//            for (int j=0;j<matris2[i].length;j++){
+//                toplam += matris2[i][j];
+//            }
+//
+//        }
+//        System.out.println("Toplam:  "+ toplam);
+
+
+        //boxing - unboxing örbeği
+
+//        int sayi =10;
+//
+//        //boxing
+//
+//        Integer nesne=sayi;
+//
+//        // unboxing
+//        int tekrar= nesne;
+//
+//        System.out.println(("İlkel; "+sayi));
+//        System.out.println("Nene:  "+nesne);
+//        System.out.println("Tekrar İlkek:  "+ tekrar);
+
+
+//        ArrayList <Integer> sayiler = new ArrayList<>();
+//
+//        sayiler.add(10);
+//        sayiler.add(20);
+//        sayiler.add(30);
+//
+//        System.out.println("Eleman sayisi: "+sayiler.size());
+//        System.out.println("İlk Elemanı: "+sayiler.get(0));
+
+//        ArrayList <String> isimler = new ArrayList<>();
+//        isimler.add("Ali");
+//        isimler.add("Ayşe");
+//        isimler.add("Mehmet");
+//
+//        for (String isim:isimler){
+//            System.out.println(isim);
+//        }
+//
+//        ArrayList<String>meyveler=new ArrayList<>();
+//
+//        meyveler.add("Elma");
+//        meyveler.add("Armut");
+//        meyveler.add("Muz");
+//
+//        //Güncelleme
+//
+//        meyveler.set(1,"Portakal");
+//
+//        //silme
+//        meyveler.remove(0);
+//
+//        System.out.println(meyveler);
+
+//        List<Integer> sayilar2=new ArrayList<>();
+//
+//        sayilar2.add(5);
+//        sayilar2.add(10);
+//        sayilar2.add(25);
+//
+//        for (int s : sayilar2){
+//            System.out.println(s);
+//        }
+
+
+        //öğrenci notları hesabı
+
+        List<Integer> notlar = new ArrayList<>();
+
+        notlar.add(70);
+        notlar.add(64);
+        notlar.add(90);
+        notlar.add(60);
+
+        int toplam=0;
+
+        System.out.println("Notlar:  ");
+
+
+        for (int n : notlar){
+            System.out.println(n);
+            toplam +=n;
+        }
+
+        double  ortalama= (double) toplam/notlar.size();
+
+        System.out.println("Ortalama: "+ortalama);
+
+
+        if (ortalama>=70){
+            System.out.println("Geçti");
+        }else {
+            System.out.println("Kaldı");
+        }
+
     }
 }
