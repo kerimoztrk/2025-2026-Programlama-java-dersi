@@ -1,6 +1,13 @@
+import com.sun.source.tree.Tree;
+
 import java.util.Arrays;
-
-
+import java.util.Queue;
+import java.util.LinkedList;
+import java.util.Stack;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.Hashtable;
+import java.util.TreeMap;
 
 interface  Ucan{
     void uc();
@@ -422,33 +429,111 @@ void main() {
 //
 
 //öğrenci notları
+//
+//    List <Integer> notlar=new ArrayList<>();
+//
+//    notlar.add(70);
+//    notlar.add(89);
+//    notlar.add(77);
+//    notlar.add(90);
+//
+//    int toplam= 0;
+//
+//    System.out.println("Notlar: ");
+//
+//    for (int n: notlar){
+//        System.out.println(n);
+//        toplam+=n;
+//    }
+//
+//    double ortalama= (double)toplam / notlar.size();
+//
+//    System.out.println("ORtalama: "+ ortalama);
+//
+//
+//    if (ortalama>=70){
+//        System.out.println("Geöti");
+//    }else{
+//        System.out.println("Kaldı");
+//    }
 
-    List <Integer> notlar=new ArrayList<>();
+    //queue kuyruk konu anlatımı
 
-    notlar.add(70);
-    notlar.add(89);
-    notlar.add(77);
-    notlar.add(90);
+//    Queue <String> kuyruk= new LinkedList<>();
+//
+//    kuyruk.add("Ayşe");
+//    kuyruk.add("ali");
+//    kuyruk.add("Mehmet");
+//
+//    System.out.println("işl çıkan: "+ kuyruk.poll());
+//    System.out.println("Sıradaki eleman: "+kuyruk.peek());
+//
+    //Stack yıgın yapısı konu anlatımı
 
-    int toplam= 0;
+    Stack<Integer> yigin =new Stack<>();
 
-    System.out.println("Notlar: ");
+    yigin.push(10);
+    yigin.push(20);
+    yigin.push(30);
 
-    for (int n: notlar){
-        System.out.println(n);
-        toplam+=n;
-    }
-
-    double ortalama= (double)toplam / notlar.size();
-
-    System.out.println("ORtalama: "+ ortalama);
+    System.out.println("Çıkan eleman: "+ yigin.pop());
+    System.out.println("Üstteki eleman "+ yigin.peek());
 
 
-    if (ortalama>=70){
-        System.out.println("Geöti");
-    }else{
-        System.out.println("Kaldı");
-    }
+    Map<String,Integer> notlar=new HashMap<>();
+
+    notlar.put("Ali",60);
+    notlar.put("Ayse",50);
+    notlar.put("Alihan",70);
+
+
+    System.out.println("Alinin notu = "+ notlar.get("Ali"));
+
+    Hashtable<Integer,String> tablo= new Hashtable<>();
+
+    tablo.put(1,"Elma");
+    tablo.put(2,"Armut");
+
+    System.out.println("1 numaralı elaman  "+tablo.get(1));
+
+
+    TreeMap<Integer,String> liste=new TreeMap<>();
+
+    liste.put(3,"C");
+    liste.put(1,"A");
+    liste.put(2,"B");
+
+    System.out.println(liste);
+
+
+    //queue yapısı müşteri sırası
+    Queue <String> musteriSirasi= new LinkedList<>();
+    musteriSirasi.add("Ali");
+    musteriSirasi.add("Ayşe");
+    musteriSirasi.add("Mehmet");
+
+    //Stack işlem geçmisi
+
+    Stack<String> gecmis = new Stack<>();
+
+    // Map = müşteri bakiyesi
+    Map<String,Integer> bakiye=new HashMap<>();
+    bakiye.put("ALi",100);
+    bakiye.put("Ayşe",200);
+    bakiye.put("Mehmet",150);
+
+    // ilem başlat
+    String siradaki=musteriSirasi.poll();
+    System.out.println("işlem yapılan müşteri : "+siradaki);
+
+    //bakiye görüntüleme
+    System.out.println("Bakiye "+ bakiye.get(siradaki));
+
+    //geçmişe ekle
+    gecmis.push(siradaki);
+
+    //son işlem kimdi
+    System.out.println("So işlem yapan: "+ gecmis.peek());
 
 }
 
