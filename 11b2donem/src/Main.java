@@ -8,7 +8,8 @@ import java.util.HashMap;
 import java.util.Map;
 import java.util.Hashtable;
 import java.util.TreeMap;
-
+import javax.swing.*;
+import java.awt.*;
 interface  Ucan{
     void uc();
 }
@@ -469,71 +470,214 @@ void main() {
 //    System.out.println("Sıradaki eleman: "+kuyruk.peek());
 //
     //Stack yıgın yapısı konu anlatımı
+//
+//    Stack<Integer> yigin =new Stack<>();
+//
+//    yigin.push(10);
+//    yigin.push(20);
+//    yigin.push(30);
+//
+//    System.out.println("Çıkan eleman: "+ yigin.pop());
+//    System.out.println("Üstteki eleman "+ yigin.peek());
+//
+//
+//    Map<String,Integer> notlar=new HashMap<>();
+//
+//    notlar.put("Ali",60);
+//    notlar.put("Ayse",50);
+//    notlar.put("Alihan",70);
+//
+//
+//    System.out.println("Alinin notu = "+ notlar.get("Ali"));
+//
+//    Hashtable<Integer,String> tablo= new Hashtable<>();
+//
+//    tablo.put(1,"Elma");
+//    tablo.put(2,"Armut");
+//
+//    System.out.println("1 numaralı elaman  "+tablo.get(1));
+//
+//
+//    TreeMap<Integer,String> liste=new TreeMap<>();
+//
+//    liste.put(3,"C");
+//    liste.put(1,"A");
+//    liste.put(2,"B");
+//
+//    System.out.println(liste);
+//
+//
+//    //queue yapısı müşteri sırası
+//    Queue <String> musteriSirasi= new LinkedList<>();
+//    musteriSirasi.add("Ali");
+//    musteriSirasi.add("Ayşe");
+//    musteriSirasi.add("Mehmet");
+//
+//    //Stack işlem geçmisi
+//
+//    Stack<String> gecmis = new Stack<>();
+//
+//    // Map = müşteri bakiyesi
+//    Map<String,Integer> bakiye=new HashMap<>();
+//    bakiye.put("ALi",100);
+//    bakiye.put("Ayşe",200);
+//    bakiye.put("Mehmet",150);
+//
+//    // ilem başlat
+//    String siradaki=musteriSirasi.poll();
+//    System.out.println("işlem yapılan müşteri : "+siradaki);
+//
+//    //bakiye görüntüleme
+//    System.out.println("Bakiye "+ bakiye.get(siradaki));
+//
+//    //geçmişe ekle
+//    gecmis.push(siradaki);
+//
+//    //son işlem kimdi
+//    System.out.println("So işlem yapan: "+ gecmis.peek());
 
-    Stack<Integer> yigin =new Stack<>();
+//    JFrame frame = new JFrame("İlk Form");
+//    frame.setSize(400,300);
+//    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+//    frame.setVisible(true);
 
-    yigin.push(10);
-    yigin.push(20);
-    yigin.push(30);
-
-    System.out.println("Çıkan eleman: "+ yigin.pop());
-    System.out.println("Üstteki eleman "+ yigin.peek());
-
-
-    Map<String,Integer> notlar=new HashMap<>();
-
-    notlar.put("Ali",60);
-    notlar.put("Ayse",50);
-    notlar.put("Alihan",70);
-
-
-    System.out.println("Alinin notu = "+ notlar.get("Ali"));
-
-    Hashtable<Integer,String> tablo= new Hashtable<>();
-
-    tablo.put(1,"Elma");
-    tablo.put(2,"Armut");
-
-    System.out.println("1 numaralı elaman  "+tablo.get(1));
+//
+//    JFrame frame2=new JFrame("Kontroller");
+//    frame2.setSize(400,300);
+//    frame2.setLayout(null);
+//    JLabel label= new JLabel("Ad:");
+//    label.setBounds(50,50,100,30);
+//
+//    JTextField text =new JTextField();
+//    text.setBounds(150,50,120,30);
+//
+//    JButton button=new JButton("Gönder");
+//    button.setBounds(150,100,100,30);
+//
+//    frame2.add(label);
+//    frame2.add(text);
+//    frame2.add(button);
+//
+//    frame2.setVisible(true);
 
 
-    TreeMap<Integer,String> liste=new TreeMap<>();
+//    JFrame frame3= new JFrame("Panel");
+//    frame3.setSize(400,300);
+//
+//    JPanel panel = new JPanel();
+//
+//    panel.add(new JButton("Buton1"));
+//    panel.add(new JButton("Buton1"));
+//
+//    frame3.add(panel);
+//    frame3.setVisible(true);
 
-    liste.put(3,"C");
-    liste.put(1,"A");
-    liste.put(2,"B");
+//
+//    JFrame frame4= new JFrame("Menü");
+//    frame4.setSize(400,300);
+//
+//    JMenuBar bar = new JMenuBar();
+//    JMenu menu=new JMenu("Dosya");
+//
+//    JMenuItem ac=new JMenuItem("Aç");
+//    JMenuItem cikis=new JMenuItem("Çıkış");
+//
+//    menu.add(ac);
+//    menu.add(cikis);
+//    bar.add(menu);
+//
+//    frame4.setJMenuBar(bar);
+//    frame4.setVisible(true);
 
-    System.out.println(liste);
+//
+//
+//    JFrame frame5=new JFrame("Popup");
+//    frame5.setSize(400,300);
+//
+//    JPopupMenu popup= new JPopupMenu();
+//    popup.add(new JMenuItem("sil"));
+//
+//    JTextArea area= new JTextArea();
+//    area.setComponentPopupMenu(popup);
+//
+//    frame5.add(area);
+//    frame5.setVisible(true);
+//
+//
+//    JOptionPane.showMessageDialog(null,"MErhaba");
+
+//
+//JFileChooser secici=new JFileChooser();
+//secici.showOpenDialog(null);
+//secici.showSaveDialog(null);
+
+//    JFrame frame6= new JFrame();
+//    frame6.setSize(400,300);
+//
+//    JLabel label2=new JLabel("Merhaba");
+//    label2.setFont(new Font("Arial",Font.BOLD,25));
+//
+//    frame6.add(label2);
+//    frame6.setVisible(true);
 
 
-    //queue yapısı müşteri sırası
-    Queue <String> musteriSirasi= new LinkedList<>();
-    musteriSirasi.add("Ali");
-    musteriSirasi.add("Ayşe");
-    musteriSirasi.add("Mehmet");
+//    Color renk =JColorChooser.showDialog(null,"Renk Seç ",Color.RED);
+//    System.out.println(renk);
 
-    //Stack işlem geçmisi
+    JFrame frame = new JFrame("Uygulama");
+  frame.setSize(400,300);
+  frame.setLayout(null);
 
-    Stack<String> gecmis = new Stack<>();
+  JTextArea area2= new JTextArea();
+  area2.setBounds(50,50,300,150);
 
-    // Map = müşteri bakiyesi
-    Map<String,Integer> bakiye=new HashMap<>();
-    bakiye.put("ALi",100);
-    bakiye.put("Ayşe",200);
-    bakiye.put("Mehmet",150);
+  JButton btn= new JButton("Göster");
+  btn.setBounds(50,220,100,30);
 
-    // ilem başlat
-    String siradaki=musteriSirasi.poll();
-    System.out.println("işlem yapılan müşteri : "+siradaki);
+  btn.addActionListener(e ->
+          JOptionPane.showMessageDialog(null, area2.getText())
+    );
 
-    //bakiye görüntüleme
-    System.out.println("Bakiye "+ bakiye.get(siradaki));
+  JButton renkBtn=new JButton("Renk");
+  renkBtn.setBounds(170,220,100,30);
 
-    //geçmişe ekle
-    gecmis.push(siradaki);
+  renkBtn.addActionListener(e->{
+          Color c=JColorChooser.showDialog(null,"Seç",Color.WHITE);
+  area2.setBackground(c);
+  });
 
-    //son işlem kimdi
-    System.out.println("So işlem yapan: "+ gecmis.peek());
+  JMenuBar bar = new JMenuBar();
+  JMenu menu= new JMenu("Dosya");
+    JMenuItem cikis= new JMenu("Çıkış");
+
+    cikis.addActionListener(e->
+            System.exit(0));
+
+
+    menu.add(cikis);
+    bar.add(menu);
+
+
+    frame.setJMenuBar(bar);
+
+    JPopupMenu popup=new JPopupMenu();
+    JMenuItem temizle= new JMenuItem("Temizle");
+    popup.add(temizle);
+
+    temizle.addActionListener(e->
+            area2.setText(" "));
+
+    area2.setComponentPopupMenu(popup);
+
+    frame.add(area2);
+    frame.add(btn);
+    frame.add(renkBtn);
+
+    frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
+    frame.setVisible(true);
+
+
+
 
 }
 
